@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xếp lọa học lực </title>
+</head>
+<body>
+<script>
+    var score15= +prompt('nhập điểm kiểm tra 15')
+    var score60 = +prompt('nhập điểm thi giữa kì');
+    var scoreYear = +prompt('nhập điểm thi cuối năm');
+    var rank = ( score15 + score60 + scoreYear) / 3;
+    if (rank >= 9) {
+        alert('Xuất sắc');
+    } else if (rank >= 8) {
+        alert('Học sinh giỏi')
+    } else if (rank >= 6.5) {
+        alert('học sinh khá');
+    } else if (rank >= 5) {
+        alert('Học sinh trung bình');
+    } else{
+        alert(' Học Sinh Chơi');
+    }
+
+</script>
+</body>
+</html>

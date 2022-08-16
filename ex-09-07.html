@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuoc di dong ho gia dinh</title>
+</head>
+<body>
+<script>
+    var minute = +prompt('Nhap so phut goi 1 thang:')
+    var mobiChar = 25000;
+    var fixChar ;
+    var charge;
+
+    if (minute <= 50) {
+        charge = mobiChar + 600 * minute;
+    }else if (minute <= 150) {
+        charge = mobiChar + 400 * minute;
+    }else{
+        charge = mobiChar + 200 * minute;
+    }
+    document.write(charge)
+</script>
+</body>
+</html>
